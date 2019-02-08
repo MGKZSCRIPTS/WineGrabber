@@ -18,7 +18,7 @@ public class OpenBank extends Task {
 
     @Override
     public void execute() {
-        Objects bankToOpen = ctx.ob
+        Objects bankToOpen = ctx.objects.select().id(BANKBOOTH).nearest().poll();
 
     }
 }
